@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exponer CDS'
+define service ZYMV_SD_ART001 {
+  expose ZYMV_CDS_ART_001;
+}
