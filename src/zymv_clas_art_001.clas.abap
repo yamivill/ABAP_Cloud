@@ -16,21 +16,22 @@ CLASS zymv_clas_art_001 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-
-
 CLASS zymv_clas_art_001 IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
+**********************************************************************
 *    Declaracion de Tbala de articulos
+**********************************************************************
 
     data: it_art TYPE STANDARD TABLE OF zymv_tab_art.
 
 *          INSERT INITIAL LINE INTO it_art ASSIGNING FIELD-SYMBOL(<fs_art>).
 *          <fs_art>-id_art = 1.
 
+**********************************************************************
 * Carga manual de tabla con datos de web https://lalibreria.mx
-
+**********************************************************************
     it_art = VALUE #(
      ( client = sy-mandt id_art = 1 descr = 'MUJI GEL .38' desc2 = 'Lapices con gel de colores varios'
     color = 'varios' piezas = 1 stock = 50
