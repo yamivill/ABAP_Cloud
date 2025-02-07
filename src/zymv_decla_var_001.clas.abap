@@ -45,12 +45,25 @@ CLASS zymv_decla_var_001 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
+
   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
   " Muestra de Variables por Consola
   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
     out->write( '=== Muestra por tipo de variables ===' ).
-    out->write( 'Fecha: ' ) .
 
+    out->write( '=== Variables Completas ===' ).
+    out->write( vl_fecha ).
+    out->write( vl_tiempo ).
+    out->write( vl_entero ).
+    out->write( vl_float ).
+    out->write( vl_str ).
+    out->write( vl_xstr ).
+
+    out->write( '=== Varables Incompletas ===' ).
+    out->write( vl_char ).
+    out->write( vl_numerico ).
+    out->write( vl_hexa ).
+    out->write( vl_decimal ).
 
 
   ENDMETHOD.
